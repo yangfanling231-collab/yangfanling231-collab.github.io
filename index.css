@@ -1,0 +1,187 @@
+
+body{
+	background:black;
+	color:white;
+	font-family:Josefin Sans;
+	font-size: 20px;
+
+}
+
+h1{
+	
+	text-shadow:7px 3px 7px red;
+}
+h2{
+
+	text-shadow:7px 3px 7px yellow;
+}
+h3{
+
+	text-shadow:7px 3px 7px lightgreen;
+}
+
+
+.row{
+	display:flex;
+	align-items:center;
+	background:rgb(204, 0, 0 );
+	top:0;
+}
+.logo{
+		marign-right:60px;
+}
+.logo{
+	width:100px;
+	height:100px;
+}
+.imglogo{
+	width:100px;
+	height:100px;
+}
+.link{
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+	margin-left:20px;
+	padding:20px 70px;			
+		}		
+.link:hover{
+	color:rgb(204, 0, 0 );
+	background:black;			
+}
+.row{
+	position:fixed
+}
+
+	
+	
+.img{
+	height:300;
+	width:100%;
+}
+.col0{
+    float:left;
+    width:40%;
+    margin-left:80px;
+    margin-right:40px;
+}
+.col1{
+	float:left;
+    width:30%;
+    margin-left:30px;       
+}
+.col2{
+	float:left;
+    width:24%;
+    margin-left:10px;
+}
+.col3{
+	float:left;
+    width:30%;
+    margin-left:30px;  
+}       
+.col4{
+    float:left;
+    width:45%;
+    margin-left:30px;     
+}
+.col5{
+	margin-left:30px;
+	margin-right:30px;
+}
+
+#a{
+	margin-left:40px
+}
+#b{
+	margin-right:40px;
+	border-radius:50%
+}
+#c{
+	height:400px;
+}
+
+
+
+
+
+
+
+
+
+.col1a{
+    float:left;
+    text-align:center;   
+    background-color:rgb(6, 13, 28);
+    width:50%;
+}
+
+.col2a{
+    float:left;
+    text-align:center;   
+    background-color:rgb(6, 13, 28);
+    width:50%;
+}
+.row2a{
+    float:left;
+    background-color:rgb(6, 13, 28);
+    margin:20px 25px
+ }
+.row1a{
+    float:left;
+    background-color:rgb(6, 13, 28);
+    margin:20px 25px
+}
+.row3a{
+	margin-left:50px;
+	margin-right:50px;
+}
+.col3a{
+	float:left;
+	width:50%;
+	
+}
+
+.col4a{
+	float:left;
+	width:45%;
+	margin-left:25px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-width:100%;
+
+}
+
+#pic1a {
+	 	width: 100%;  
+		max-width: 600px; 
+		height: 330px;  
+		background-image: url("https://tse1.mm.bing.net/th/id/OIP.Cc-hcyxADLNn7QxfBydyDQHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3");
+		background-size: cover;
+		background-position: center;
+		transition: all 2s ease; 
+	 	transition-delay: 0.5s;
+	 	margin-left:100px;
+}
+
+#pic1a:hover{   
+	height: 400px; 
+	background-image: url("https://sportsbase.io/images/gpfans/copy_1200x800/91ee515651cf1af8ffd2fda87441fbfb9fcc763e.jpg");
+}
+
+#pic2a{
+	width: 100%;
+	 	max-width: 600px;
+	height: 330px;
+	background-image: url("https://img.stcrm.it/images/37969503/HOR_WIDE/1000x/andrea-kimi-antonelli-italy-prema-879068375-jpg.jpg");
+	background-size: cover;
+	background-position: center;
+	transition: width 2s, height 2s, background-image 2s, background-color 2s;
+	transition-delay: 0.5s;
+}
+
+#pic2a:hover{
+	width: 700px;
+	height: 400px;
+	background-image: url("https://storage.googleapis.com/fp-media/1/2023/05/andrea-kimi-antonelli.jpg");
+}
