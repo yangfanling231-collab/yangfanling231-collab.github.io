@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="memory game for people to practice">
+    <meta name="keywords" content="memory game, practice">
+    <title>Memory Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Josefin+Sans:ital,wght@0,600;1,600&family=Schoolbell&family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="row">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="memory.html">Memory Game</a>
+        <a class="link" href="reaction.html">Reaction Game</a>
+    </div>
+
+    <br><br><br><br><br>
+
+    <h2 id="s">Memory Game</h2>
+
+    <p id="instruction">
+        The words will be shown below. Remember them and type them again.
+        If correct, the level increases.
+    </p>
+
+    <div id="display"></div>
+
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="resetGame()">Reset</button>
+
+    <p id="z">Level: <span id="level">0</span></p>
+
+    <div id="celebration"></div>
+
+    <script src="memory.js"></script>
+
+    <style>
+        body {
+            font-family: Josefin Sans;
+            text-align: center;
+            background-image: url('https://gips0.baidu.com/it/u=2864904819,3156938601&fm=3074&app=3074&f=PNG?w=2560&h=1440');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-size: 20px;
+        }
+
+        .row {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            background: rgb(255,236,61);
+            padding: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+            padding: 20px 175px;
+        }
+
+        .link:hover {
+            color: rgb(255,236,61);
+            background: black;
+        }
+
+        #display {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 30px;
+            min-height: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        #celebration {
+            margin-top: 20px;
+            font-size: 50px;
+        }
+
+        #instruction {
+            font-size: 30px;
+            color: red;
+        }
+
+        #s {
+            font-size: 45px;
+        }
+
+        #z {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+
+</body>
+</html>

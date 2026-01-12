@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="reaction game for people to practice">
+    <meta name="keywords" content="reaction game, practice">
+
+
+
+    <div class="row">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="memory.html">Memory Game</a>
+        <a class="link" href="reaction.html">Reaction Game</a>
+    </div>
+    <br><br><br><br><br>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin-top: 60px;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 40px auto;
+            cursor: pointer;
+        }
+
+        #message {
+            font-size: 18px;
+        }
+        .row {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            background: rgb(255,236,61);
+            padding: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+            padding: 20px 175px;
+        }
+
+        .link:hover {
+            color: rgb(255,236,61);
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>Wait until the box turns green, then click it.</p>
+
+    <div id="box"></div>
+
+    <p id="message">Click the box to start</p>
+
+    <script>
+        let startTime;
+        let waiting = false;
+
+        const box = document.getElementById("box");
+        const message = document.getElementById("message");
+
+        box.onclick = function () {
+            if (!waiting) {
+                box.style.backgroundColor = "red";
+                message.textContent = "Wait for green...";
+                waiting = true;
+
+                let randomTime = Math.random() * 3000 + 1000;
+
+                setTimeout(function () {
+                    box.style.backgroundColor = "green";
+                    startTime = Date.now();
+                }, randomTime);
+
+            } else {
+                if (box.style.backgroundColor === "green") {
+                    let reactionTime = Date.now() - startTime;
+                    message.textContent = "Your reaction time: " + reactionTime + " ms";
+                    waiting = false;
+                } else {
+                    message.textContent = "Too early! Try again.";
+                    waiting = false;
+                }
+            }
+        };
+    </script>
+
+</body>
+</html>
